@@ -120,7 +120,7 @@ main {
 .container-main {
   padding: 1.5rem;
   max-width: 300px;
-  min-width: 280px;
+  min-width: 285px;
   flex: 1 0 20%;
   background-color: white;
   display: flex;
