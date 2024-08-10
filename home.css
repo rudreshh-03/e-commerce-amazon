@@ -107,8 +107,9 @@ header {
 }
 .sub-items {
   font-family: "Syne Mono";
-  font-weight: bold;
+  font-weight: lighter;
   color: white;
+  font-size: 0.8rem;
 }
 /* End Sub-Header */
 main {
