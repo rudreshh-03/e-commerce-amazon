@@ -14,6 +14,7 @@ figcaption {
   font-family: "PT Sans Caption";
   font-size: 0.8rem;
 }
+.no-underline,
 a {
   text-decoration: none;
   color: black;
