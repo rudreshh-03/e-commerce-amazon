@@ -14,6 +14,10 @@ figcaption {
   font-family: "PT Sans Caption";
   font-size: 0.8rem;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 /* Start Header */
 header {
   background-color: black;
