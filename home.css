@@ -56,6 +56,7 @@ header {
   padding: 1em;
   font-size: 1rem;
   font-family: "Roboto Condensed";
+  border-radius: 0px;
 }
 .search-icon-header {
   background-color: orange;
