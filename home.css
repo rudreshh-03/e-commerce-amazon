@@ -20,7 +20,7 @@ header {
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px;
