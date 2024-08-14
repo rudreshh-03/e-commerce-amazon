@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=PT+Sans+Caption:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Syne+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=PT+Sans+Caption:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Signika:wght@300..700&family=Syne+Mono&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +14,7 @@ figcaption {
   font-family: "PT Sans Caption";
   font-size: 0.8rem;
 }
-
+.no-underline,
 a {
   text-decoration: none;
   color: black;
@@ -26,6 +26,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   gap: 10px 30px;
@@ -114,15 +115,125 @@ header {
   font-family: "Syne Mono";
   font-weight: lighter;
   color: white;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 /* End Sub-Header */
-main {
+/* Start Nav */
+nav {
+  position: absolute;
+  background-color: white;
+  color: black;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.9rem;
+  height: 100vh;
+  padding: 1.5rem;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  font-family: Signika;
+  display: none;
+  z-index: 2;
+}
+nav > .head {
+  background-color: rgb(7, 7, 51);
+  color: white;
+  margin: -1.5rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+
+/* End Nav */
+/* Start Main */
+main.img-animation {
+  background: rgb(60, 147, 10);
+  background: radial-gradient(
+    circle,
+    rgb(100, 139, 189) 0%,
+    rgb(69, 100, 126) 100%
+  );
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+.img-animation-item {
+  width: 100vw;
+  height: fit-content;
+}
+main.img-animation > img.img-animation-1 {
+  animation-name: image-animation-1;
+  animation-duration: 10s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+main.img-animation > img.img-animation-2 {
+  animation: image-animation-2 10s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+main.img-animation > img.img-animation-3 {
+  animation: image-animation-3 10s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+}
+@keyframes image-animation-1 {
+  0% {
+    display: block;
+  }
+  33.5% {
+    display: none;
+  }
+  66% {
+    display: none;
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes image-animation-2 {
+  0% {
+    display: none;
+  }
+  33.5% {
+    display: none;
+  }
+  34% {
+    display: block;
+  }
+  66% {
+    display: none;
+  }
+  100% {
+    display: none;
+  }
+}
+@keyframes image-animation-3 {
+  0% {
+    display: none;
+  }
+  33.5% {
+    display: none;
+  }
+  34% {
+    display: none;
+  }
+  66% {
+    display: none;
+  }
+  67% {
+    display: block;
+  }
+  100% {
+    display: none;
+  }
+}
+main.cards {
   background: rgb(34, 193, 195);
   background: radial-gradient(
     circle,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 167, 45, 1) 100%
+    rgb(168, 122, 52) 0%,
+    rgb(72, 137, 72) 100%
   );
   display: flex;
   flex-direction: row;
