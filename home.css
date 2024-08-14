@@ -154,7 +154,7 @@ main.img-animation {
     rgb(69, 100, 126) 100%
   );
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: nowrap;
 }
 .img-animation-item {
@@ -181,10 +181,16 @@ main.img-animation > img.img-animation-3 {
   0% {
     display: block;
   }
-  33.5% {
+  33% {
+    display: none;
+  }
+  34% {
     display: none;
   }
   66% {
+    display: none;
+  }
+  67% {
     display: none;
   }
   100% {
@@ -195,13 +201,16 @@ main.img-animation > img.img-animation-3 {
   0% {
     display: none;
   }
-  33.5% {
+  33% {
     display: none;
   }
   34% {
     display: block;
   }
   66% {
+    display: none;
+  }
+  67% {
     display: none;
   }
   100% {
@@ -212,7 +221,7 @@ main.img-animation > img.img-animation-3 {
   0% {
     display: none;
   }
-  33.5% {
+  33% {
     display: none;
   }
   34% {
