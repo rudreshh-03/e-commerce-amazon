@@ -159,7 +159,7 @@ main.img-animation {
 }
 .img-animation-item {
   width: 100vw;
-  height: fit-content;
+  height: 62vh;
 }
 main.img-animation > img.img-animation-1 {
   animation-name: image-animation-1;
