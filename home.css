@@ -238,11 +238,11 @@ main.img-animation > img.img-animation-3 {
   }
 }
 main.cards {
-  background: rgb(34, 193, 195);
+  background: rgb(166, 172, 172);
   background: radial-gradient(
     circle,
-    rgb(168, 122, 52) 0%,
-    rgb(72, 137, 72) 100%
+    rgb(255, 255, 255) 0%,
+    rgb(170, 170, 170) 100%
   );
   display: flex;
   flex-direction: row;
@@ -270,8 +270,35 @@ main.cards {
 .item-main {
   flex-grow: 0;
   flex-shrink: 1;
+  font-size: 1.3rem;
 }
 figcaption {
   text-align: center;
+}
+div.container-main-full {
+  background-color: white;
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  padding: 0.4rem;
+}
+div.container-main-img-full {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  margin-top: 1rem;
+  margin: 1rem;
+}
+.item-main-full {
+  width: 15rem;
+  height: 14rem;
+}
+.item-name-full {
+  margin: 0.5rem;
 }
 /* End Main */
